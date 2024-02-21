@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Open Sans', 'Alice' sans-serif;
+}
+
+:root {
+    --primary-color: #ffff;
+    --secondary-color: #ff9821;
+}
+
+html {
+    font-size: 59.2%;
+    scroll-behavior: smooth;
+    scroll-padding: 16vmax;
+}
+
+body {
+    background-color: rgb(254,231,201,0.5);
+}
+
+header,
+main {
+    padding: 1rem;
+}
+
+/* Header Scroll */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: .4s ease-in-out;
+    z-index: 10;
+}
+
+header.active {
+    background-color: rgb(185,113,24);
+}
+
+
+.dividor_hero {
+    background-color: rgb(255,176,86);
+    height: .2rem;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.dividor {
+    background-color: rgb(255,176,86);
+    height: .2rem;
+    margin: 9vh 0vh 3vh 0vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.dividor_header {
+    background-color: rgb(255,176,86);
+    height: 2rem;
+    width: .2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dividor_header::after {
+    content: "";
+    background-color: rgb(255,176,86);
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Hero section */
+
+/* .hero_section_information{
+    padding: 8rem 0 2vh 0;
+} */
+
+.hero_section {
+    margin-top: 30vw;
+}
+
+.hero_section_background {
+    background: 
+               linear-gradient(to bottom , transparent, rgb(254,242,227, 30)), 
+               linear-gradient(to left,  rgb(254,242,227, 30%), transparent), 
+               url("../assests/images/background1_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vw;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+
+.navigation_section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 8rem;
+}
+
+
+.nav_links {
+    display: none;
+}
+
+.nav_links.active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(1, 1, 1, 0.3);
+    z-index: 10;
+}
+
+.nav_links.active nav {
+    width: 94%;
+}
+
+.nav_links.active nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: #e2dada;
+    padding: 2rem 6rem 2rem 2rem;
+    border-radius: .4rem;
+    transition:  margin-right 2s .5s;
+    margin-top: 11rem;
+}
+
+.nav_links nav ul a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 3rem;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: 0.3s ease;
+    width: fit-content;
+}
+
+.nav_links nav ul a:before{
+    content: "";
+    height: .3rem;
+    width: 0;
+    position: absolute;
+    background: rgb(254,231,201,0.5);
+    bottom: 0;
+    left: 0;
+    border-radius: .4rem;
+    transition: 0.3s ease;
+}
+
+.nav_links nav ul a:hover:before {
+    width: 100%;
+    transition: 0.8s  ease-in-out;
+}
+
+
+
+
+
+.navigation_menu {
+    background: url("../assests/images/baricon.png")no-repeat;
+    background-size: 6rem;
+    background-position: center;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    transition: .3s ease; 
+    
+}
+
+.navigation_menu.active {
+    z-index: 30;
+    background: url("../assests/images/closeicon.png")no-repeat;
+    background-size: 2.5rem;
+    background-position: center;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    transition: .3s ease; 
+}
+
+
+/* main Section */
+
+/* Hero Section */
+.head_content {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.hero_section_information {
+    margin-top: 7vh;
+}
+
+.head_content p {
+    font-weight: 600;
+}
+
+.sub_head_content {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.sub_head_content span {
+    font-weight: bold;
+
+}
+
+/* Our Program Section */
+.menu_sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_sections .header article {
+    background-color: rgb(255,176,86);
+    width: fit-content;
+    padding: 1rem 2rem 1rem 2rem;
+    color: #ffff;
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-radius: .6rem;
+    margin-bottom: .8rem;
+    
+}
+
+/* card Section */
+.our_programs_cards {
+    display: grid;
+    place-items: center;
+    row-gap: 2rem;
+}
+
+.our_programs_card {
+    position: relative;
+}
+
+.our_programs_card img {
+    height: auto;
+    border-radius: .8rem;
+    border: 2px solid #ffff;
+    width: 100%;
+}
+
+.our_programs_card_details {
+    position: absolute;
+    bottom: 0rem;
+    top: ;
+    margin: 0rem 0.2rem;
+    padding: 1.5rem 2rem;
+    background: rgba(1, 1, 1, 0.3);
+    margin-bottom: 0.3rem;
+    border-bottom-left-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    align-content: center;
+}
+
+.our_programs_card_details h3 {
+   font-size: 1.8rem;
+   font-weight: 500;
+   color: #ffff;
+   font-style: italic;
+}
+
+.our_programs_card_details p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #ffff;
+    margin-top: 1rem;
+}
+
+/* Our Instructors */
+.our_instructors_details {
+    padding-top: 12vh;
+}
+
+.our_instructors_images{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+}
+.our_instructors_images #our_instructor_1 {
+    position: relative;
+    bottom: 4rem;
+}
+
+.our_instructors_image {
+    background-color: rgb(232,206,177);
+    border: 2px solid #fff;
+    height: 24vh;
+    width: 28vw;
+   
+    border-radius: 1rem;
+    position: relative;
+}
+
+.our_instructors_images .our_instructors_image img {
+    position: absolute;
+    /* left: 1vw; */
+    bottom: -0.4rem;
+    right: 0rem;
+    width: 16vh;
+    height: auto;
+}
+
+.article {
+    margin: 3rem 0rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.our_instructors_information article span {
+    font-weight: 600;
+}
+
+/* Our Comunity */
+.our_community_information {
+    margin: 1rem 0rem;
+}
+
+/* Competition and Achievement */
+.competition_achievement_images {
+    display: grid;
+    place-items: center;
+    row-gap: 2rem;
+}
+
+.competition_achievement_images img {
+  width: 100%;
+  height: auto;
+  border-radius: .3rem;
+}
+
+/* Choose Us */
+
+.choose_us_why_title {
+    font-size: 2.4rem;
+}
+
+.choose_us_why_title  p {
+  font-size: 2.4rem;
+  font-weight: 600;
+ 
+}
+
+.head_content p span,
+.choose_us_why_title article span,
+ .header {
+  font-weight: 600;
+  font-family: "Alice", serif;
+}
+
+.choose_us_card {
+    display: grid;
+    place-items: center;
+    margin: 4rem 0rem 3rem 0rem;
+  
+}
+
+.choose_us_card::after {
+    content: "";
+    height: .2rem;
+    width: 100%;
+    background-color: #000;
+}
+
+.choose_us_card .choose_us_card_image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.choose_us_card_information {
+    padding: .5rem .5rem;
+}
+
+.choose_us_card_information .choose_us_card_title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: ;
+}
+
+.choose_us_card_information .choose_us_card_content {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.choose_us_card_image,
+.choose_us_card_information {
+    margin-bottom: 1rem;
+}
+
+/* Join Us */
+.join_us_section .join_us_header {
+    display: grid;
+    place-items: center;
+    background-color: rgb(254,152,32);
+    padding: 1.8rem 0rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.join_us_content p {
+   margin: 2rem 0rem;
+   text-align: center;
+   font-size: 1.7rem;
+   font-weight: 400;
+}
+
+/* Footer */
+footer {
+    padding: 0;
+}
+
+footer .footer_one,
+.footer_two {
+    padding: 2rem 1rem;
+}
+
+footer .footer_one {
+    background-color: rgb(254,152,32);
+}
+
+footer .footer_one_categories {
+    color: #fff;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    
+}
+
+.footer_one_category .footer_category_title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: .4rem;
+    position: relative;
+    display: inline-block;
+}
+
+.footer_one_category .footer_category_title:after {
+    content: "";
+    display: inline-block;
+    height: .2rem;
+    width: 100%;
+    background-color: rgb(254,231,201,0.5);
+    position: absolute;
+    left: 0;
+    
+}
+
+.footer_one_category .footer_category_content p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+}
+
+footer .footer_two {
+    background-color: rgb(185,113,24);
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
