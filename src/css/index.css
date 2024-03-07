@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Open Sans', 'Alice' sans-serif;
 }
 
 :root {
@@ -14,21 +14,52 @@
 }
 
 html {
-    font-size: 59.2%;
+    font-size: 62.2%;
     scroll-behavior: smooth;
     scroll-padding: 16vmax;
 }
 
 body {
-    background-color: rgb(254,231,201,0.5);
+    background-color: rgb(254,231,201);
+    ackground: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    font-family: "Montserrat", sans-serif;
 }
+
 
 header,
 main {
-    padding: 1rem;
+    padding: 0rem;
+}
+
+header {
+    padding: .6rem 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 /* Header Scroll */
+.header_section {
+    position: relative;
+    overflow: hidden;
+    height: 58vh;
+    /* background: rgba(1, 1, 1, 0.3); */
+    text-align: left;
+    background-image: linear-gradient(360deg, rgba(254,231,201, 100%), transparent);
+}
+
+.hero_section_video {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 header {
     position: fixed;
     width: 100%;
@@ -45,7 +76,7 @@ header.active {
 .dividor_hero {
     background-color: rgb(255,176,86);
     height: .2rem;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 10%;
     position: relative;
     display: flex;
@@ -82,33 +113,10 @@ header.active {
 }
 
 /* Hero section */
-
-/* .hero_section_information{
+/* 
+.hero_section_information{
     padding: 8rem 0 2vh 0;
 } */
-
-.hero_section {
-    margin-top: 30vw;
-}
-
-.hero_section_background {
-    background: 
-               linear-gradient(to bottom , transparent, rgb(254,242,227, 30)), 
-               linear-gradient(to left,  rgb(254,242,227, 30%), transparent), 
-               url("../assests/images/background1_img.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    transform: scaleX(-1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vw;
-    z-index: -1;
-    overflow: hidden;
-}
 
 
 
@@ -117,10 +125,11 @@ header.active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 !important;
 }
 
 .logo img {
-    height: 8rem;
+    height: 9rem;
 }
 
 
@@ -157,12 +166,13 @@ header.active {
 
 .nav_links nav ul a {
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase;
     line-height: 3rem;
     text-decoration: none;
     color: black;
     position: relative;
+    /* border: 3px solid blue; */
     transition: 0.3s ease;
     width: fit-content;
 }
@@ -185,12 +195,9 @@ header.active {
 }
 
 
-
-
-
 .navigation_menu {
-    background: url("../assests/images/baricon.png")no-repeat;
-    background-size: 6rem;
+    background: url("../assests/images/bar_icon.png")no-repeat;
+    background-size: 3rem;
     background-position: center;
     width: 4rem;
     height: 4rem;
@@ -210,6 +217,38 @@ header.active {
     transition: .3s ease; 
 }
 
+/* .main_section{
+    border: 3px solid rgb(99, 156, 99);
+    position: relative;
+    background-image: 
+    linear-gradient(to bottom , transparent, rgb(254,231,201)), 
+    linear-gradient(to left,  rgb(254,231,201, 30%), transparent);
+} */
+
+/* .hero_section {
+    border: 3px solid red;
+    position: relative;
+    min-width: 100vw;
+    min-height: 30vh;
+    background: rgba(1, 1, 1, 0.3);background-image: 
+    linear-gradient(to bottom , transparent, rgb(254,231,201)), 
+    linear-gradient(to left,  rgb(254,231,201, 30%), transparent);
+    
+}
+
+.hero_section_background {
+    position: absolute;
+  
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero_section_video {
+    width: 100vw;
+} */
+
+
 
 /* main Section */
 
@@ -220,7 +259,8 @@ header.active {
 }
 
 .hero_section_information {
-    margin-top: 7vh;
+    margin-top: 19vh;
+    z-index: 1000;
 }
 
 .head_content p {
@@ -308,31 +348,32 @@ header.active {
 }
 
 .our_instructors_images{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
+
 .our_instructors_images #our_instructor_1 {
     position: relative;
     bottom: 4rem;
 }
 
 .our_instructors_image {
+   
     background-color: rgb(232,206,177);
     border: 2px solid #fff;
-    height: 24vh;
-    width: 28vw;
-   
+    height: 21vh;
+    width: 10rem;
     border-radius: 1rem;
     position: relative;
 }
 
 .our_instructors_images .our_instructors_image img {
     position: absolute;
-    /* left: 1vw; */
     bottom: -0.4rem;
-    right: 0rem;
-    width: 16vh;
+    right: 0;
+    width: 28vw;
     height: auto;
 }
 
@@ -356,6 +397,7 @@ header.active {
     display: grid;
     place-items: center;
     row-gap: 2rem;
+    
 }
 
 .competition_achievement_images img {
@@ -364,8 +406,43 @@ header.active {
   border-radius: .3rem;
 }
 
-/* Choose Us */
+.competition_achievement_images img:nth-child(n+7){
+    display: none;
+    transition: .9s ease-in-out;
+}
 
+.competition_images_buttons {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.competition_images_button > button {
+    margin-top: 2rem;
+   padding: 1rem 2rem 1rem 2rem;
+   background-color: rgb(254, 152, 32);
+   color: #fff;
+   font-size: 1.6rem;
+   border: 1px solid white;
+   border-radius: .8rem;
+}
+
+.competition_images_button > button:hover {
+    cursor: pointer;
+    font-size: 1.7rem;
+    /* box-shadow: 1rem 1rem 1rem 1rem rgb(184, 219, 128); */
+    transition: 0.8s;
+}
+
+.hidden {
+    display: none;
+    transition: all .3s ease-in-out;
+}
+
+
+
+/* Choose Us */
 .choose_us_why_title {
     font-size: 2.4rem;
 }
@@ -378,10 +455,13 @@ header.active {
 
 .head_content p span,
 .choose_us_why_title article span,
- .header {
-  font-weight: 600;
-  font-family: "Alice", serif;
-}
+ .hero_section_information .head_content,
+ .header,
+ .competition_images_button button,
+ .choose_us_why_title article {
+  font-weight: 500;
+  font-family: "Playfair Display", serif !important;
+ }
 
 .choose_us_card {
     display: grid;
@@ -424,19 +504,28 @@ header.active {
 }
 
 /* Join Us */
+.join_us_section a {
+    text-decoration: none;
+}
+
 .join_us_section .join_us_header {
     display: grid;
     place-items: center;
     background-color: rgb(254,152,32);
     padding: 1.8rem 0rem;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     font-weight: 600;
     color: #fff;
+    cursor: pointer;
+}
 
+.join_us_section .join_us_header:hover {
+    border-radius: .5rem;
+    transition: .3s ease-in-out;
 }
 
 .join_us_content p {
-   margin: 2rem 0rem;
+   margin: 3rem 0rem;
    text-align: center;
    font-size: 1.7rem;
    font-weight: 400;

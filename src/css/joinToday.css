@@ -1,0 +1,227 @@
+/* all */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+:root {
+  --main-color: rgb(254,231,201);
+  --sub-color: rgb(254,231,201, 0.5);
+  --main-purple: #9b59b6;
+  --main-grey: #ccc;
+  --sub-grey: #d9d9d9;
+}
+
+html {
+  font-size: 62.9%;
+}
+
+header {
+  background-color: rgb(185,113,24);
+}
+
+main {
+  margin-top: 13rem;
+  margin-bottom: 3rem;
+  display: grid;
+  place-content: center;
+}
+
+header .nav_links nav ul a:nth-child(2),
+header .nav_links nav ul a:nth-child(3),
+header .nav_links nav ul a:nth-child(4) {
+    display: none;
+}
+
+
+.form_containers {
+  display: flex;
+  height: 100vh;
+  justify-content: center; /*center vertically */
+  align-items: center; /* center horizontally */
+  padding: 10px;
+  border: 3px solid red;
+}
+/* containers and form */
+.containers {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  position: relative;
+  font-family: "Playfair Display", serif;
+}
+.containers .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.containers .title::before {
+  content: "";
+  position: absolute;
+  height: 3.5px;
+  width: 30px;
+  background: linear-gradient(135deg, var(--main-color), var(--main-purple));
+  left: 0;
+  bottom: 0;
+}
+
+.containers form .user__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+/* inside the form user details */
+form .user__details .input__box {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 15px;
+}
+
+.user__details .input__box .details {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: block;
+}
+.user__details .input__box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--main-grey);
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user__details .input__box input:focus,
+.user__details .input__box input:valid {
+  border-color: var(--main-purple);
+}
+
+/* inside the form gender details */
+
+form .gender__details .gender__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .gender__details .category {
+  display: flex;
+  width: 80%;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+
+.gender__details .category label {
+  display: flex;
+  align-items: center;
+}
+.gender__details .category label {
+  font-size: 16px;
+}
+
+.gender__details .category .dot {
+  height: 18px;
+  width: 18px;
+  background: var(--sub-grey);
+  border-radius: 50%;
+  margin: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three {
+  border-color: var(--sub-grey);
+  background: var(--main-purple);
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+/* submit button */
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #000;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: var(--main-color);
+  transition: all 0.6s ease;
+}
+
+form .button input:hover {
+  transition: all 0.3s ease;
+  background: linear-gradient(-135deg, var(--main-color), var(--main-grey));
+}
+
+@media only screen and (max-width: 584px) {
+  .containers {
+    max-width: 100%;
+  }
+
+  form .user__details .input__box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .gender__details .category {
+    width: 100%;
+  }
+
+  .containers form .user__details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user__details::-webkit-scrollbar {
+    width: 0;
+  }
+
+  /* messages */
+  .success-message,
+  .error-message {
+    font-weight: 800;
+  }
+}
+
+/* CSS for success message */
+.success-message {
+  color: green;
+  font-size: 1.6rem;
+  font-weight: 400;
+  position: absolute;
+  top: 2rem;
+  background-color: white;
+  padding: 2rem 0rem;
+}
+
+/* CSS for error message */
+.error-message {
+  position: absolute;
+  top: 2rem;
+  color: red;
+  font-weight: 400;
+  font-size: 1.6rem;
+  background-color: white;
+  padding: 2rem 0rem;
+}

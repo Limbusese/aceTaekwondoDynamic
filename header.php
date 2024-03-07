@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faqs</title>
+
+    <link rel="icon" href="./src/assests/images/icons.png" type="images/png" />
+
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <linK rel="stylesheet" href="./src/css/responsive.css"/>
+    
+    <script src="./src/javascript/index.js" defer></script>
+  
+</head>
+<body>
+<header>
+        <section>
+          <section class="navigation_section container">
+            <section class="logo">
+              <a href="index.php"> <img src="./src/assests/images/icons.png" /></a>
+            </section>
+    
+            <section class="navigation_menu"></section>
+    
+            <section class="nav_links">
+              <nav>
+                <ul>
+                  <a href="index.php">Home</a>
+                  <a href="#our_programs">Our Program</a>
+                  <a href="#instructors">Instructor</a>
+                  <a href="#gallery">Gallery</a>
+                  <a href="faq.php">Faqs</a>
+                  <a href="#contactUs">Contact Us</a>
+                </ul>
+              </nav>
+            </section>
+          </section>
+        </section>
+      </header>
+</body>
+</html>

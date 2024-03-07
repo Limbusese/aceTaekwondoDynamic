@@ -11,36 +11,43 @@
 
 @media only screen and (min-width: 480px) {
   .container {
-    max-width: 95%;
+    max-width: 90%;
     padding: 0 1rem;
   }
 
   html {
-    font-size: 57.9%;
+    font-size: 62.9%;
   }
 
   .dividor_hero {
     background-color: rgb(255,176,86);
     height: 0.2rem;
-    margin-top: 30%;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
     position: relative;
     display: flex;
     justify-content: center;
   }
 
-  .hero_section_background {
-    height: 90vw;
+  /* Header Section */
+  .header_section {
+    height: 65vh;
   }
 
   /* Our Instructors */
+  .our_instructors_images {
+    gap: 1.5rem;
+  }
+  
   .our_instructors_image {
-    height: 24vh;
-    width: 32%;
+    height: 30vh;
+    width: 12rem;
   }
 
+
   .our_instructors_images .our_instructors_image img {
-    right: 16%;
+    right: 2%;
+    width: 21vh;
   }
 }
 
@@ -53,21 +60,33 @@
   .dividor_hero {
     background-color: rgb(255,176,86);
     height: 0.2rem;
-    margin-top: 30%;
+    margin-top: 5%;
     margin-bottom: 5%;
     position: relative;
     display: flex;
     justify-content: center;
   }
 
-  .hero_section_background {
-    height: 80vw;
+  /* Our Instructors Details */
+  .our_instructors_images {
+    gap: 2.5rem;
+  }
+  
+  .our_instructors_image {
+    height: 34vh;
+    width: 12rem;
+  }
+
+
+  .our_instructors_images .our_instructors_image img {
+    right: 1%;
+    width: 23vh;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 90%x;
+    max-width: 85%;
     padding: 0rem 2rem;
   }
 
@@ -76,18 +95,19 @@
   }
 
   /* Header Section */
+  .header_section {
+    height: 50vh;
+  }
 
   /* Hero Section */
   .dividor_hero {
-    margin-top: 40%;
-    margin-bottom: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
-  .hero_section {
-    margin-top: 23vh;
-}
 
-.hero_section_background {
-  height: 68vw;
+  .hero_section_information {
+    margin-top: 20vh;
+   
 }
 
   /* Our Program Section */
@@ -104,18 +124,18 @@
   }
 
   /* Our Instructor Section */
-
+  .our_instructors_images {
+    gap: 1rem;
+  }
+  
   .our_instructors_image {
-    height: 30vh;
-    width: 27vw;
+    height: 29vh;
+    width: 17rem;
   }
 
+
   .our_instructors_images .our_instructors_image img {
-    position: absolute;
-    bottom: -0.4rem;
-    left: 1rem;
-    width: auto;
-    height: 38vh;
+    width: 19vh;
   }
 
   /* Our Community */
@@ -131,7 +151,7 @@
 
 @media only screen and (min-width: 1024px) {
   .container {
-    max-width: 90%;
+    max-width: 85%;
   }
 
   html {
@@ -139,7 +159,7 @@
   }
 
   .dividor_hero {
-    margin-top: 30%;
+    margin-top: 5%;
     margin-bottom: 4%;
   }
 
@@ -196,15 +216,19 @@
     margin: 0;
   }
 
+  .header_section {
+    height: 80vh;
+  }
+  
+  .hero_section_information {
+    margin-top: 2vh;
+  }
+
   /* Hero Section */
- 
-
-
-
   .hero_section_information {
     display: grid;
-    grid-template-columns: 40%;
-    margin-top: 29vh;
+    grid-template-columns: 40vw;
+    margin-top: 24vh;
   }
 
   /* Our Programs Card */
@@ -216,12 +240,29 @@
     padding: 0 0.6rem;
   }
 
+  /* Our Instructors */
   .our_instructors_details {
     display: grid;
     grid-template-columns: 56% 40%;
     column-gap: 3rem;
   }
 
+  .our_instructors_images {
+    gap: 1rem;
+  }
+  
+  .our_instructors_image {
+    height: 32vh;
+    width: 12rem;
+  }
+  
+  
+  .our_instructors_images .our_instructors_image img {
+    right: 1%;
+    width: 21vh;
+  }
+
+  /* Our Community */
   .our_community_information {
     display: grid;
     grid-template-columns: 50%;
@@ -301,8 +342,28 @@
   }
 
   /* Hero Section */
-  .hero_section_background {
-    height: 65vw;
+  .header_section {
+    height: 85vh;
+  }
+
+  .hero_section_information {
+    margin-top: 15%;
+  }
+
+  /* our Instructors */
+  .our_instructors_images {
+    gap: 1rem;
+  }
+  
+  .our_instructors_image {
+    height: 32vh;
+    width: 14rem;
+  }
+  
+  
+  .our_instructors_images .our_instructors_image img {
+    right: 1%;
+    width: 21vh;
   }
 }
   
@@ -311,34 +372,42 @@
 
 @media only screen and (min-width: 1536px) {
   .container {
-    max-width: 90%;
+    max-width: 85%;
   }
 
   html {
-    font-size: 76%;
+    font-size: 72%;
   }
 
   /* Hero Section */
-  .hero_section_background {
-    width: 98.8vw;
-    height: 63vw;
-  }
 
   .dividor_hero {
-    margin-top: 34%;
+    margin-top: 5%;
+    margin-bottom: 3%;
   }
 
-  .our_instructors_image {
-    height: 32vh;
-    width: 13vw;
-
+  .hero_section_information {
+    margin-top: 14%;
+   
   }
 
-  .our_instructors_images .our_instructors_image img {
-    position: absolute;
-    bottom: -0.4rem;
-    left: 2rem;
-    width: auto;
-    height: 41vh
+  .header_section {
+    height: 80vh;
   }
+
+/* Our Instructors */
+.our_instructors_images {
+  gap: 1rem;
+}
+
+.our_instructors_image {
+  height: 32vh;
+  width: 12rem;
+}
+
+
+.our_instructors_images .our_instructors_image img {
+  right: 1%;
+  width: 21vh;
+}
 }

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ace Taekwondo & Coaching Center</title>
+    <link rel="icon" href="./src/assests/images/icons.png" type="images/png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <linK rel="stylesheet" href="./src/css/responsive.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="./src/javascript/index.js" defer></script>
+  </head>
+
+  <body>
+    <section class="header_section">
+      <section class="hero_section_background">
+        <video class="hero_section_video" autoplay loop muted>
+          <source src="./src/assests/videos/background_video.mp4" type="video/mp4">
+        </video>
+      </section>
+
+      <section class="hero_section_information container">
+        <section class="head_content">
+          <article>
+            Welcome to <br>
+            <p>Ace Taekwondo <span>&amp</span> Coaching Services,</p> Melbourne
+          </article>
+        </section>
+
+        <section class="sub_head_content">
+          <article>
+            Led by
+            <span>Mahadev Dhanuk</span>, a seasoned Black Belt hailing from Nepal, the
+              Ace Taekwondo and Coaching Services stands as a beacon of
+              innovation we offer a diverse range of programs tailored to
+              individuals of all ages and skill levels.
+          </article>
+        </section>
+      </section>
+    </section>
+      
+     <!-- Header Section Starts -->
+     <?php include('header.php') ?>
+     <!-- Header Sectiond Ends -->
+
+  
+      <main>
+        <section class="container main_section">
+          <section class="dividor_hero">
+            <section class="dividor_header"></section>
+          </section>
+    
+          <section class="our_programs_section menu_sections" id="our_programs">
+            <section class="our_program_header header">
+              <article>Our Programs</article>
+            </section>
+          </section>
+    
+          <section class="our_programs_cards">
+            <section class="our_programs_card" data-os="fade-down"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-sine">
+              <section class="our_programs_card_images">
+                <img src="./src/assests/images/our_program_img1.png" alt="karate.png" />
+              </section>
+    
+              <section class="our_programs_card_details">
+                <article>
+                  <h3>Private Lessons (Ages 2 and above):</h3>
+                  <p>
+                    Experience personalized instruction tailored to your specific
+                    goals and abilities under the guidance of our expert
+                    instructors.
+                  </p>
+                </article>
+              </section>
+            </section>
+    
+            <section class="our_programs_card" data-os="fade-down"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+              <section class="our_programs_card_images">
+                <img src="./src/assests/images/our_program_img2png" alt="karate.png" />
+              </section>
+    
+              <section class="our_programs_card_details">
+                <article>
+                  <h3>Hatchling Classes (Ages 3-6):</h3>
+                  <p>
+                    Nurture the budding talents of our youngest practitioners with engaging and age-appropriate lessons designed to instill discipline, focus, and coordination.
+                  </p>
+                </article>
+              </section>
+            </section>
+    
+            <section class="our_programs_card" data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+              <section class="our_programs_card_images">
+                <img src="./src/assests/images/our_program_img3.png" alt="karate.png" />
+              </section>
+    
+              <section class="our_programs_card_details">
+                <article>
+                  <h3>Ascending Dragons Program (Ages 7-11):</h3>
+                  <p>
+                    Our specialized curriculum for children aged 7 to 11 focuses on building confidence, respect, and athleticism through the art of Taekwondo.
+                  </p>
+                </article>
+              </section>
+            </section>
+  
+            <section class="our_programs_card" data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+              <section class="our_programs_card_images">
+                <img src="./src/assests/images/our_program_img4.png" alt="karate.png" />
+              </section>
+    
+              <section class="our_programs_card_details">
+                <article>
+                  <h3>Special Courses for Adults and Teens:</h3>
+                  <p>
+                    Whether you're a seasoned practitioner or a newcomer to martial arts, our adult and teen classes offer a supportive environment for personal growth, fitness, and self-defense.
+                  </p>
+                </article>
+              </section>
+            </section>
+            
+    
+          </section>
+    
+          <section class="dividor">
+            <section class="dividor_header"></section>
+          </section>
+    
+          <section class="our_instructors_section menu_sections" id="instructors">
+            <section class="our_instructors_header header">
+              <article>Our Instructors</article>
+            </section>
+          </section>
+          
+          <section class="our_instructors_details">
+            <section class="our_instructors_images"data-aos="zoom-in-up"
+            data-aos-duration="1100"
+            data-aos-easing="ease-in-sine">
+              <section class="our_instructors_image">
+                <img src="./src/assests/images/our_instructor_3.png" alt="instructor.png">
+              </section>
+    
+              <section class="our_instructors_image" id="our_instructor_1">
+                <img src="./src/assests/images/our_instructor_1.png" alt="instructor.png">
+              </section>
+    
+              <section class="our_instructors_image" id="our_instructor_3">
+                <img src="./src/assests/images/our_instructor_2.png" alt="instructor.png">
+              </section>
+            </section>
+    
+            <section class="our_instructors_information article">
+              <article>
+                <p>In addition to <span>Mahadev Dhanuk,</span> our esteemed team includes visitor trainer <span>Deepak Bista</span> and <span>Sangina Vaidaya</span>. Together , they bring a wealth of experience and expertise to our institute, ensuring that each student receives the highest quality instruction.</p>
+              </article>
+            </section>
+          </section>
+         
+          <section class="our_community_section">
+            <section class="dividor">
+              <section class="dividor_header"></section>
+            </section>
+      
+            <section class="our_instructors_section menu_sections">
+              <section class="our_instructors_header header">
+                <article>Our Communty</article>
+              </section>
+            </section>
+    
+            <section class="our_community_information article" data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+              <article>
+                <p>At the Ace Taekwondo and Coaching Srvices, we're more than just a martial arts school -- we're a family. Our vibrant Communty of students and instructors fosters camaraderie, mutual respect and a shared passion for excellence both on and off the mat. </p>
+              </article>
+            </section>
+          </section>
+          
+          <section class="competition_achievement_section" id="gallery">
+            <section class="dividor">
+              <section class="dividor_header"></section>
+            </section>
+      
+            <section class="our_instructors_section menu_sections">
+              <section class="our_instructors_header header">
+                <article>Competitions & Achievements:</article>
+              </section>
+            </section>
+    
+            <section class="competition_achievement_images" data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+              <img src="./src/assests/images/our_achievement1.jpeg" alt="karate.png"/>
+              <img src="./src/assests/images/our_achievement2.jpeg" alt="karate.png"/>
+              <img src="./src/assests/images/our_achievement3.jpeg" alt="karate.png"/>
+              <img src="./src/assests/images/our_achievement4.jpeg" alt="karate.png"/>
+              <img src="./src/assests/images/our_achievement5.jpeg" alt="karate.png"/>
+              <img src="./src/assests/images/our_achievement6.jpeg" alt="karate.png"/>
+              <img src="./src/assests/images/our_achievement7.jpeg" alt="karate.png"/>
+              <img src="./src/assests/images/our_achievement8.jpeg" alt="karate.png"/>
+              <img src="./src/assests/images/our_achievement9.jpeg" alt="karate.png"/>
+              <img src="./src/assests/images/our_achievement9.jpeg" alt="karate.png"/>
+              <img src="./src/assests/images/our_achievement9.jpeg" alt="karate.png"/>
+            </section>
+
+            <section class="competition_images_buttons">
+              <section class="competition_images_button load_more">
+                <button>Get More Images</button>
+              </section>
+  
+              <section class="competition_images_button load_less hidden">
+                <button>Get Less Images</button>
+              </section>
+            </section>
+    
+            <section class="competition_achievement_information article">
+              <article>
+                <p>Explore our extensive collection of photos showcasing the achievements of our students in varous competitions and events. From local tournaments to national championships, we take pride in celebrating the accomplishments of every member of our institute.</p>
+              </article>
+            </section>
+          </section>
+    
+          <section class="choose_us">
+            <section class="dividor">
+              <section class="dividor_header"></section>
+            </section>
+    
+            <section class="choose_us_why_title" data-aos="fade-right"
+            data-aos-duration="1000">
+              <article>
+                Why Choose<p> Ace Taekwondo <span>&amp</span> Coaching Services?</span></p>
+              </article>
+            </section>
+    
+            <section class="choose_us_cards">
+              <section class="choose_us_card row">
+                <section class="choose_us_card_image" data-aos="zoom-in-right"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-sine">
+                  <img src="./src/assests/images/experienced.jpeg">
+                </section>
+    
+                <section class="choose_us_card_information"  data-aos="zoom-out-right"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-sine">
+                  <section class="choose_us_card_title">
+                    <article>Experienced:</article>
+                  </section>
+    
+                  <section class="choose_us_card_content">
+                    <article>
+                       <p>With over 30+ years of establishment, Ace Taekwondo and Coaching Services boasts a legacy of excellence in martial arts education. Our classes are led by seasoned Taekwondo professionals who bring a wealth of knowledge and expertise to every session.</p>
+                    </article>
+                  </section>
+                </section>
+              </section>
+    
+              <section class="choose_us_card row_reverse" >
+                <section class="choose_us_card_image" data-aos="zoom-out-right"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-sine">
+                  <img src="./src/assests/images/affortable.jpeg">
+                </section>
+    
+                <section class="choose_us_card_information" data-aos="zoom-in-right"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-sine">
+                  <section class="choose_us_card_title">
+                    <article>Affortable:</article>
+                  </section>
+    
+                  <section class="choose_us_card_content">
+                    <article>
+                       <p>We believe that quality martial arts instruction should be accessible to all. That's why our tailored programs are competitively priced, ensuring that individuals and families can embark on their Taekwondo journey without breaking the bank.</p>
+                    </article>
+                  </section>
+                </section>
+              </section>
+    
+              <section class="choose_us_card row">
+                <section class="choose_us_card_image" data-aos="zoom-in-right"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-sine">
+                  <img src="./src/assests/images/supportive.jpeg">
+                </section>
+    
+                <section class="choose_us_card_information" data-aos="zoom-out-right"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-sine">
+                  <section class="choose_us_card_title">
+                    <article>Supportive:</article>
+                  </section>
+    
+                  <section class="choose_us_card_content">
+                    <article>
+                       <p>At Ace Taekwondo and Coaching Service we're more than just a martial arts school - we're a community. We Welcome students of all ages and skill levels to join our Taekwondo family, fostering a supportive environment where everyone can thrive. We particularly encourage families to train together, strengthening bonds while mastering the arts of Taekwondo.</p>
+                    </article>
+                  </section>
+                </section>
+              </section>
+    
+              <section class="choose_us_card row_reverse">
+                <section class="choose_us_card_image" data-aos="zoom-out-right"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-sine">
+                  <img src="./src/assests/images/affortable.jpeg">
+                </section>
+    
+                <section class="choose_us_card_information" data-aos="zoom-in-right"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-sine">
+                  <section class="choose_us_card_title">
+                    <article>Affortable:</article>
+                  </section>
+    
+                  <section class="choose_us_card_content">
+                    <article>
+                       <p>We believe that quality martial arts instruction should be accessible to all. That's why our tailored programs are competitively priced, ensuring that indiviudals and families can embark on their Taekwondo journey without breaking the bank.</p>
+                    </article>
+                  </section>
+                </section>
+              </section>
+    
+              <section class="choose_us_card row">
+                <section class="choose_us_card_image" data-aos="zoom-in-right"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-sine">
+                  <img src="./src/assests/images/supportive.jpeg">
+                </section>
+    
+                <section class="choose_us_card_information" data-aos="zoom-out-right"
+                data-aos-duration="1200"
+                data-aos-easing="ease-in-sine">
+                  <section class="choose_us_card_title">
+                    <article>Convenient Locations:</article>
+                  </section>
+    
+                  <section class="choose_us_card_content">
+                    <article>
+                       <p>Convenience is key, which is why our schools are strategically located in Melbourne, Australia, catering to the families across the region. Whether you reside in the heart of the city or the outskrits, our easily accessible locations ensure that you can embark on your martial arts journey with ease.</p>
+                    </article>
+                  </section>
+                </section>
+              </section>
+            </section>
+          </section>
+    
+          <section class="join_us_section">
+            <section class="dividor">
+              <section class="dividor_header"></section>
+            </section>
+    
+           <a href="joinToday.php">
+              <section class="join_us_header header" data-aos="zoom-in-down"
+               data-aos-duration="1300"
+               data-aos-easing="ease-in">
+                <article>Join Us Today:</article>
+              </section>
+           </a>
+    
+            <section class="join_us_content" >
+              <article>
+                <p>Whether you're looking to build confidence, improve fitness , or simply embark on a journey of self-discovery, the Ace Taekwondo and Coaching Service Welcomes you with open arms. Contact us to schedule a trial lesson or learn more about programs. <br><br> Embark on your martial arts journey with us and discover the transformative power of Taekwondo.</p>
+              </article>
+            </section>
+          </section>
+        </section>
+        
+  
+      </main>
+  
+     <!-- Footer Section Starts -->
+     <?php include('footer.php') ?>
+     <!-- Footer Section Ends -->
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>AOS.init({
+        duration: 400,
+        delay: 4000,
+      });</script>
+  </body>
+</html>
