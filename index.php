@@ -14,11 +14,11 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./src/css/index.css" />
-    <linK rel="stylesheet" href="./src/css/responsive.css"/>
+    <link rel="stylesheet" href="./src/assests/css/index.css" />
+    <linK rel="stylesheet" href="./src/assests/css/responsive.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <script src="./src/javascript/index.js" defer></script>
+    <script src="./src/assests/javascript/index.js" defer></script>
   </head>
 
   <body>
@@ -50,7 +50,7 @@
     </section>
       
      <!-- Header Section Starts -->
-     <?php include('header.php') ?>
+     <?php include('./include/header.php') ?>
      <!-- Header Sectiond Ends -->
 
   
@@ -368,7 +368,7 @@
               <section class="dividor_header"></section>
             </section>
     
-           <a href="joinToday.php">
+           <a href="./include/joinToday.php">
               <section class="join_us_header header" data-aos="zoom-in-down"
                data-aos-duration="1300"
                data-aos-easing="ease-in">
@@ -388,7 +388,7 @@
       </main>
   
      <!-- Footer Section Starts -->
-     <?php include('footer.php') ?>
+     <?php include('./include/footer.php') ?>
      <!-- Footer Section Ends -->
 
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

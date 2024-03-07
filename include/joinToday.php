@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Join Us Today</title>
-  <link rel="icon" href="./src/assests/images/icons.png" type="images/png" />
+  <link rel="icon" href="../src/assests/images/icons.png" type="images/png" />
 
-  <link rel="stylesheet" href="./src/css/joinToday.css" />
-  <script src="./src/javascript/joinToday.js" defer></script>
+  <link rel="stylesheet" href="../src/assests/css/joinToday.css" />
+  <script src="../src/assests/javascript/joinToday.js" defer></script>
 </head>
 
 <body>
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-  <?php include ('header.php')?>
+  <?php include ('./header.php')?>
   <main>
     <section class="form_container">
       <section class="containers">
@@ -98,7 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </section>
     </section>
   </main>
-  <?php include('footer.php')?>
+  <?php include('./footer.php')?>
 </body>
 
 </html>

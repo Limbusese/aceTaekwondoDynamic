@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faqs</title>
+    <title>Faqs</title>.
 
-    <link rel="icon" href="./src/assests/images/icons.png" type="images/png" />
-    <link rel="stylesheet" href="./src/css/faq.css"/>
+    <link rel="icon" href="../src/assests/images/icons.png" type="images/png" />
+    <link rel="stylesheet" href="../src/assests/css/faq.css"/>
 </head>
 <body>
-   <?php include('header.php')?>
+   <?php include('../include/header.php')?>
     <main>
         <section class="accordion">
             <h1>Frequently Asked Questions</h1>

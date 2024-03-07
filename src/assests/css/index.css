@@ -166,7 +166,7 @@ header.active {
 
 .nav_links nav ul a {
     font-size: 1.6rem;
-    font-weight: 800;
+    font-weight: 500;
     text-transform: uppercase;
     line-height: 3rem;
     text-decoration: none;
@@ -196,7 +196,7 @@ header.active {
 
 
 .navigation_menu {
-    background: url("../assests/images/bar_icon.png")no-repeat;
+    background: url("../images/bar_icon.png")no-repeat;
     background-size: 3rem;
     background-position: center;
     width: 4rem;
@@ -208,7 +208,7 @@ header.active {
 
 .navigation_menu.active {
     z-index: 30;
-    background: url("../assests/images/closeicon.png")no-repeat;
+    background: url("../images//closeicon.png")no-repeat;
     background-size: 2.5rem;
     background-position: center;
     width: 4rem;

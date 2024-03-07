@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faqs</title>
 
-    <link rel="icon" href="./src/assests/images/icons.png" type="images/png" />
+    <link rel="icon" href="../src/assests/images/icons.png" type="images/png" />
 
-    <link rel="stylesheet" href="./src/css/index.css" />
-    <linK rel="stylesheet" href="./src/css/responsive.css"/>
+    <link rel="stylesheet" href="./src/assests/css/index.css" />
+    <linK rel="stylesheet" href="./src/assests/css/responsive.css"/>
     
-    <script src="./src/javascript/index.js" defer></script>
+    <script src="../src/assests/javascript/index.js" defer></script>
   
 </head>
 <body>
