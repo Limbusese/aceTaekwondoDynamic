@@ -17,18 +17,23 @@ html {
     font-size: 62.2%;
     scroll-behavior: smooth;
     scroll-padding: 16vmax;
+    
 }
 
 body {
     background-color: rgb(254,231,201);
-    ackground: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     font-family: "Montserrat", sans-serif;
+    /* border: 4rem solid; 
+    box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+    border-image: linear-gradient(to right, #000 50%, #ff9924 50%);
+    border-image-slice: 1; */
+
 }
 
 
 header,
 main {
-    padding: 0rem;
+  padding: 0;
 }
 
 header {
@@ -66,6 +71,7 @@ header {
     top: 0;
     transition: .4s ease-in-out;
     z-index: 10;
+    /* margin: 4rem 0; */
 }
 
 header.active {
@@ -393,7 +399,7 @@ header.active {
 }
 
 /* Competition and Achievement */
-.competition_achievement_images {
+.competition_achievement_images .competition_achievement_images_slider {
     display: grid;
     place-items: center;
     row-gap: 2rem;
@@ -401,14 +407,21 @@ header.active {
 }
 
 .competition_achievement_images img {
-  width: 100%;
-  height: auto;
-  border-radius: .3rem;
+   width: 100%;
+   height: auto;
+   border-radius: .3rem;
+   
 }
 
-.competition_achievement_images img:nth-child(n+7){
+.competition_achievement_images img:nth-child(n+7) {
     display: none;
-    transition: .9s ease-in-out;
+    transition: opacity .9s ease-in-out;
+}
+
+.competition_achievement_images img:hover{
+    cursor: pointer;
+    transition: .6s ease-in-out;
+    transform: scale(1.03);
 }
 
 .competition_images_buttons {
@@ -438,6 +451,99 @@ header.active {
 .hidden {
     display: none;
     transition: all .3s ease-in-out;
+}
+
+/* Competition Images to be slider */
+.competition_achievement_images_popup {
+    background-color: rgba(1, 1, 1, .7);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    max-width: 160rem;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    opacity: 0; 
+    visibility: hidden;
+    transition: opacity 0.9s ease-in-out, visibility 1s ease-in-out;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.competition_achievement_images_popup.active,
+.competition_achievement_images_popup.active img,
+.competition_achievement_images_popup .prev_slide,
+.competition_achievement_images_popup .next_slide {
+    opacity: 1;
+    visibility: visible;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.competition_achievement_images_popup.active .competition_achievement_image_details {
+    position: relative;
+    max-width: 90vw;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.competition_achievement_images_popup.active .competition_achievement_image_details:hover {
+    cursor: pointer;
+}
+
+.competition_achievement_images_popup.active .competition_achievement_image_details .competition_achievement_image {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.9rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+    object-fit: cover;
+}
+
+.competition_achievement_images_popup.active .competition_achievement_image_details .competition_achievement_image > img {
+    border-radius: 0.6rem;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    opacity: 1;   
+    transition: 1s ease-in-out;
+    
+}
+
+.competition_achievement_images_popup.active .competition_achievement_images_control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.competition_achievement_images_popup.active .competition_achievement_images_control:hover {
+    background-color: rgba(255, 255, 255);
+}
+
+.competition_achievement_images_popup.active .competition_achievement_images_controls .prev_slide {
+    left: 6%;  
+    transform: translate(-50%, -50%);
+}
+
+.competition_achievement_images_popup.active .competition_achievement_images_controls .next_slide {
+    right: 6%;  
+    transform: translate(50%, -50%);
 }
 
 

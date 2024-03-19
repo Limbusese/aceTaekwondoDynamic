@@ -205,23 +205,39 @@ form .button input:hover {
 }
 
 /* CSS for success message */
-.success-message {
+/* .success-message {
   color: green;
   font-size: 1.6rem;
   font-weight: 400;
   position: absolute;
   top: 2rem;
   background-color: white;
-  padding: 2rem 0rem;
+  padding: 1.5rem 0rem;
 }
 
 /* CSS for error message */
-.error-message {
-  position: absolute;
+/* .error-message {
   top: 2rem;
+  position: absolute;
   color: red;
   font-weight: 400;
   font-size: 1.6rem;
   background-color: white;
-  padding: 2rem 0rem;
+  padding: 1.5rem 0rem;
+}  */ */
+
+.swal-modal,
+.swal-button {
+  font-family: "Playfair Display", serif;
+}
+
+.swal-button {
+  background-color: rgb(254,231,201, 0.5);
+  transition: all 0.5s;
+  border: none;
+  color: #000;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: rgb(254,231,201);
 }

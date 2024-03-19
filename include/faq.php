@@ -6,6 +6,7 @@
     <title>Faqs</title>.
 
     <link rel="icon" href="../src/assests/images/icons.png" type="images/png" />
+
     <link rel="stylesheet" href="../src/assests/css/faq.css"/>
 </head>
 <body>

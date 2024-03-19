@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Join Us Today</title>
   <link rel="icon" href="../src/assests/images/icons.png" type="images/png" />
-
   <link rel="stylesheet" href="../src/assests/css/joinToday.css" />
+
   <script src="../src/assests/javascript/joinToday.js" defer></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>

@@ -88,7 +88,6 @@ loadMoreBtn[0].addEventListener("click", () => {
 });
 
 
-
 // Function to show Load Less 
 loadLessBtn[0].addEventListener("click", () => {
 

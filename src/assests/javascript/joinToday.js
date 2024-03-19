@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const formData = {};
 
-        // Query DOM for each input element individually
         const firstNameInput = form.querySelector('input[type="text"][placeholder="E.g: John"]');
         const lastNameInput = form.querySelector('input[type="text"][placeholder="E.g: Smith"]');
         const ageInput = form.querySelector('input[type="number"][placeholder="E.g: 12"]');
@@ -36,8 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         console.log(Object.keys(formData).length);
-
-        // Send data to PHP file using AJAX if all fields are filled
+        
         if (Object.keys(formData).length === 7) {
             const xhr = new XMLHttpRequest();
             xhr.open('POST', 'joinToday.php', true);
@@ -46,16 +44,20 @@ document.addEventListener("DOMContentLoaded", function () {
             xhr.onload = function () {
                 if (xhr.status === 200) {
                     console.log('Data sent successfully');
-                    const successMessage = document.createElement('div');
-                    successMessage.textContent = "Great! Your Information Is Submitted.";
-                    successMessage.classList.add('success-message');
+                    // const successMessage = document.createElement('div');
+                    // successMessage.textContent = "Great! Your Information Is Submitted.";
+                    // successMessage.classList.add('success-message');
 
-                    container.appendChild(successMessage);
+                    // container.appendChild(successMessage);
 
                     setTimeout(() => {
-                        successMessage.remove();
+                        swal({
+                            title: "Great!",
+                            text: "You information have been submitted!",
+                            icon: "success",
+                        });
                         form.reset();
-                    }, 2000);
+                    }, 600);
                 } else {
                     console.log('Error sending data');
                 
@@ -64,15 +66,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
             xhr.send(JSON.stringify(formData));
         } else {
-            const errorMessage = document.createElement('div');
-            errorMessage.textContent = "Error!! Please Fill All Form Fields.";
-            errorMessage.classList.add('error-message'); 
+            // const errorMessage = document.createElement('div');
+            // errorMessage.textContent = "Error!! Please Fill All Form Fields.";
+            // errorMessage.classList.add('error-message'); 
 
-            container.appendChild(errorMessage);
+            // container.appendChild(errorMessage);
 
             setTimeout(() => {
-                errorMessage.remove();
-            }, 2000);
+                swal({
+                    title: "Error!",
+                    text: "Please fill all form fields!",
+                    icon: "warning",
+                });
+            }, 400);
         }
     });
 });

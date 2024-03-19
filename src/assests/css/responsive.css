@@ -270,7 +270,7 @@
   }
 
   /* Competition and achievement */
-  .competition_achievement_images {
+  .competition_achievement_images .competition_achievement_images_slider {
     place-content: center;
     /* padding: 0 0.5rem; */
     display: grid;

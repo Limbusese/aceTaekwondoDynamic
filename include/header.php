@@ -18,7 +18,7 @@
         <section>
           <section class="navigation_section container">
             <section class="logo">
-              <a href="index.php"> <img src="../src/assests/images/icons.png" /></a>
+              <a href="../index.php"> <img src="../src/assests/images/icons.png" /></a>
             </section>
     
             <section class="navigation_menu"></section>
