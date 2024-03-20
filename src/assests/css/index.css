@@ -23,10 +23,10 @@ html {
 body {
     background-color: rgb(254,231,201);
     font-family: "Montserrat", sans-serif;
-    /* border: 4rem solid; 
+    border: 6rem solid; 
     box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
     border-image: linear-gradient(to right, #000 50%, #ff9924 50%);
-    border-image-slice: 1; */
+    border-image-slice: 1;
 
 }
 
@@ -132,6 +132,7 @@ header.active {
     justify-content: space-between;
     align-items: center;
     padding: 0 !important;
+    margin-top: 5rem;
 }
 
 .logo img {
