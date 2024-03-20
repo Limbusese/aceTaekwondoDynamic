@@ -410,18 +410,23 @@ header.active {
    width: 100%;
    height: auto;
    border-radius: .3rem;
-   
+   transition: transform 0.6s ease-in-out
 }
+
 
 .competition_achievement_images img:nth-child(n+7) {
     display: none;
     transition: opacity .9s ease-in-out;
 }
 
-.competition_achievement_images img:hover{
-    cursor: pointer;
-    transition: .6s ease-in-out;
+.competition_achievement_images img:hover {
     transform: scale(1.03);
+    cursor: pointer;
+}
+
+.competition_achievement_images:hover img:not(:hover) {
+    transform: scale(0.9);
+    opacity: 0.7;
 }
 
 .competition_images_buttons {
