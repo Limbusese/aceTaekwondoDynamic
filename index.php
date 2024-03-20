@@ -82,7 +82,7 @@
 
         <section class="our_programs_card" data-os="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           <section class="our_programs_card_images">
-            <img src="./src/assests/images/our_program_img2png" alt="karate.png" />
+            <img src="./src/assests/images/our_program_img2.png" alt="karate.png" />
           </section>
 
           <section class="our_programs_card_details">
