@@ -11,10 +11,16 @@ html {
 
 header {
     background-color: rgb(185,113,24);
+    padding: none;
+    margin: none;
+}
+
+header .navigation_section {
+    top: 0;
 }
 
 main {
-    margin-top: 14rem;
+   
 }
 
 header .nav_links nav ul a:nth-child(2),
@@ -23,20 +29,27 @@ header .nav_links nav ul a:nth-child(4) {
     display: none;
 }
 
-.accordion {
-    display: flex;
+
+main {
+    position: relative;
+    top: 0;
+}
+
+main .accordion {
+    display: flex; 
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
     max-width: 99.1rem;
     min-width: 32.0 rem;
-    margin: 5.0rem auto;
-    padding: 0 5.0rem;
+    margin: 1.0rem auto;
+    padding: 10rem 2.0rem;
 }
 
 .accordion h1 {
     font-size: 3.2rem;
     text-align: center;
     font-family: "Playfair Display", sans-serif;
+    margin-bottom: 2rem;
 }
 
 .accordion-item {

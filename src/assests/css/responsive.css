@@ -1,11 +1,11 @@
 .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  
+ 
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 10% !important; 
+  padding-right: 10% !important; 
+}
   
   /* Small Screen Size */
   
@@ -34,24 +34,13 @@
       height: 65vh;
     }
   
-    /* Our Instructors */
-    .our_instructors_images {
-      gap: 1.5rem;
-    }
     
-    .our_instructors_image {
-      height: 30vh;
-      width: 12rem;
-    }
-  
-  
-    .our_instructors_images .our_instructors_image img {
-      right: 2%;
-      width: 21vh;
-    }
-  }
   
   @media only screen and (min-width: 640px) {
+    body .body_section {
+      padding: 2rem;
+    }
+
     .container {
       max-width: 90%;
       padding: 0rem 1rem;
@@ -69,22 +58,27 @@
   
     /* Our Instructors Details */
     .our_instructors_images {
-      gap: 2.5rem;
+      gap: 8%;
+      margin-top: 5%;
     }
     
     .our_instructors_image {
-      height: 34vh;
-      width: 12rem;
+      width: 14rem;
+      height: 37dvw;
     }
   
   
     .our_instructors_images .our_instructors_image img {
       right: 1%;
-      width: 23vh;
+      width: 25dvw;
     }
   }
   
   @media only screen and (min-width: 768px) {
+    body .body_section {
+      padding: 4rem;
+    }
+
     .container {
       max-width: 85%;
       padding: 0rem 2rem;
@@ -123,19 +117,21 @@
       font-size: 1.5rem;
     }
   
-    /* Our Instructor Section */
+    /* Our Instructors Details */
     .our_instructors_images {
-      gap: 1rem;
+      gap: 3%;
+      margin-top: 9%;
     }
     
     .our_instructors_image {
-      height: 29vh;
-      width: 17rem;
+      width: 15rem;
+      height: 32dvw;
     }
   
   
     .our_instructors_images .our_instructors_image img {
-      width: 19vh;
+      right: 1%;
+      width: 22dvw;
     }
   
     /* Our Community */
@@ -223,6 +219,44 @@
     .hero_section_information {
       margin-top: 2vh;
     }
+
+    /* cicrle starts here */
+    .circle {
+      width: 23rem; 
+      height: 23rem; 
+      border-radius: 50%;
+      position: absolute;
+      top: 1.5%;
+      right: -5%;
+      transform: rotate(15deg);
+      z-index: 11;
+     
+    }
+    
+    .circle::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+          to right,
+          rgb(188,177,160, 0.5) ,
+          rgb(188,177,160, 0.5) ,
+           .3rem,
+          transparent 0.2rem,
+          transparent 0.8rem
+      );
+      border-radius: 50%;
+    }
+
+    .circle_top {
+      right: 30%;
+    }
+
+    /* circle ends here */
   
     /* Hero Section */
     .hero_section_information {
@@ -241,25 +275,28 @@
     }
   
     /* Our Instructors */
+ 
+    /* Our Instructors Details */
     .our_instructors_details {
       display: grid;
       grid-template-columns: 56% 40%;
       column-gap: 3rem;
     }
-  
+
     .our_instructors_images {
-      gap: 1rem;
+      gap: 4%;
+      margin-top: 9%;
     }
     
     .our_instructors_image {
-      height: 32vh;
-      width: 12rem;
+      width: 15rem;
+      height: 24dvw;
     }
-    
-    
+  
+  
     .our_instructors_images .our_instructors_image img {
       right: 1%;
-      width: 21vh;
+      width: 16dvw;
     }
   
     /* Our Community */
@@ -350,21 +387,23 @@
       margin-top: 15%;
     }
   
-    /* our Instructors */
+    /* Our Instructors Details */
     .our_instructors_images {
-      gap: 1rem;
+      gap: 3%;
+      margin-top: 6%;
     }
     
     .our_instructors_image {
-      height: 32vh;
       width: 14rem;
+      height: 20dvw;
     }
-    
-    
+  
+  
     .our_instructors_images .our_instructors_image img {
       right: 1%;
-      width: 21vh;
+      width: 13dvw;
     }
+    
   }
     
   
@@ -386,14 +425,139 @@
       margin-bottom: 3%;
     }
   
-    .hero_section_information {
-      margin-top: 14%;
-     
-    }
+
   
     .header_section {
       height: 80vh;
     }
+
+    .accordion {
+      padding: 4.9rem 8.6rem;
+
+    }
+
+    body .body_section {
+      height: 100%;
+      border: 3px solid;
+      font-family: "Montserrat", sans-serif;
+      background: linear-gradient(to right, #000 50%, #ff9924 50%);
+      border-image-slice: 1;
+      padding: 4rem;
+      overflow: hidden;
+    
+    }
+    
+    .background_section {
+      background-color: rgb(254, 231, 201);
+      height: 100%;
+      z-index: 10;
+      box-shadow: 0rem 0.9rem 0.9rem 0.9rem rgba(1, 1, 1, 0.3);
+      position: relative;
+      
+    }
+    
+    /* circle css starts here */
+    .circle {
+      width: 23rem; 
+      height: 23rem; 
+      border-radius: 50%;
+      position: absolute;
+      top: 1.5%;
+      right: -5%;
+      transform: rotate(15deg);
+      z-index: 11;
+     
+    }
+    
+    .circle::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+          to right,
+          rgb(188,177,160, 0.5) ,
+          rgb(188,177,160, 0.5) ,
+           .3rem,
+          transparent 0.2rem,
+          transparent 0.8rem
+      );
+      border-radius: 50%;
+    }
+    
+    .circle_top {
+      width: 50rem; 
+      height: 50rem; 
+      border-radius: 50%;
+      position: absolute;
+      top: -7rem;
+      right: 30%;
+      transform: rotate(15deg);
+      z-index: -1;
+     
+    }
+    
+    .circle_top::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+          to right,
+          rgb(188,177,160, 0.2) ,
+          rgb(188,177,160, 0.2) ,
+           0.5rem,
+          transparent 0.2rem,
+          transparent 0.8rem
+      );
+      border-radius: 50%;
+    }
+    
+    
+    .circle_bottom {
+      width: 33rem; 
+      height: 33rem; 
+      border-radius: 50%;
+      position: absolute;
+      left: -14%;
+      bottom: -2%;
+      transform: rotate(15deg);
+      z-index: 10;
+     
+    }
+    
+    .circle_bottom::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+          to right,
+          rgb(188,177,160, 0.5) ,
+          rgb(188,177,160, 0.5) ,
+           0.5rem,
+          transparent 0.2rem,
+          transparent 0.8rem
+      );
+      border-radius: 50%;
+    }
+    
+    /* Hero Secion Starts  */
+    .hero_section_information {
+      margin: 6% 0;
+    }
+
+    /* Her Section Ends */
+    
   
   /* Our Instructors */
   .our_instructors_images {

@@ -21,16 +21,47 @@ navigationMenu.addEventListener("click", ()=> {
 
 // Header Scroller 
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function() {
     let header = document.querySelector('header');
 
-    if (this.window.scrollY > 50) {
-        header.classList.add("active");
+    if (window.scrollY > 50) {
+      header.classList.add("active");
     } else {
-        header.classList.remove("active");
+      header.classList.remove("active");
+    }
+
+  });
+
+  window.addEventListener('scroll', function() {
+    let header = document.querySelector('header');
+    if (window.scrollY < 50) {
+        header.classList.add("top");
+        history.replaceState({}, document.title, window.location.pathname);
+    } else {
+        header.classList.remove("top"); // Remove the "top" class when scrolling beyond the threshold
     }
 });
 
+
+
+// const backgroundSection = document.querySelector('.background_section');
+//   const bodySection = document.querySelector('.body_section');
+
+//   bodySection.addEventListener('scroll', function() {
+//     const scrollY = bodySection.scrollTop;
+//     const windowHeight = bodySection.clientHeight;
+//     const fullHeight = backgroundSection.scrollHeight;
+
+//     // Calculate the height of the visible area
+//     const visibleHeight = windowHeight + scrollY;
+
+//     // Check if the visible area exceeds the full height
+//     if (visibleHeight >= fullHeight) {
+//       backgroundSection.style.overflowY = 'hidden'; // Hide overflowing part
+//     } else {
+//       backgroundSection.style.overflowY = 'scroll'; // Allow scrolling
+//     }
+//   });
 
 
 
