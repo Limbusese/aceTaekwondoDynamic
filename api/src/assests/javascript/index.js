@@ -32,16 +32,15 @@ window.addEventListener("scroll", function() {
 
   });
 
-  window.addEventListener('scroll', function() {
-    let header = document.querySelector('header');
-    if (window.scrollY < 50) {
-        header.classList.add("top");
-        history.replaceState({}, document.title, window.location.pathname);
-    } else {
-        header.classList.remove("top"); // Remove the "top" class when scrolling beyond the threshold
-    }
-});
+// document.querySelectorAll('a[href^="../index.php"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
 
+//         document.querySelector(this.getAttribute('href')).scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });
 
 
 // const backgroundSection = document.querySelector('.background_section');

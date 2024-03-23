@@ -327,7 +327,7 @@ header.active .navigation_section {
 
 .hero_section_information {
   position: absolute;
-  top: 24dvh;
+  top: 40dvw;
   z-index: 8;
 }
 
@@ -457,7 +457,7 @@ header.active .navigation_section {
   background-color: rgb(232, 206, 177);
   border: 0.2rem solid #fff;
   height: 43dvw;
-  width: 13rem;
+  width: 15rem;
   border-radius: 1rem;
   position: relative;
 }
@@ -472,7 +472,7 @@ header.active .navigation_section {
 
 .article {
   margin: 3rem 0rem;
-  text-align: center;
+  text-align: left;
   font-size: 1.7rem;
   font-weight: 500;
 }
@@ -791,3 +791,4 @@ footer .footer_two {
   font-weight: 500;
   line-height: 2.5rem;
 }
+
