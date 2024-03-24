@@ -313,6 +313,10 @@
       right: 1%;
       width: 16dvw;
     }
+
+    .article {
+      text-align: right;
+    }
   
     /* Our Community */
     .our_community_information {
