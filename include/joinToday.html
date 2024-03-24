@@ -6,9 +6,12 @@
     <title>Join Us Today</title>
     <link rel="icon" href="../src/assests/images/icons.png" type="images/png" />
     <link rel="stylesheet" href="../src/assests/css/joinToday.css" />
+    <link rel="stylesheet" href="../src/assests/css/index.css" />
+    <linK rel="stylesheet" href="../src/assests/css/responsive.css" />
 
     <script src="../src/assests/javascript/joinToday.js" defer></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../src/assests/javascript/index.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer></script>
   </head>
 
   <body>
@@ -18,7 +21,32 @@
 
     <section class="body_section">
       <section class="background_section">
-        <section id="header"></section>
+        <section id="header">
+          <header>
+            <section class="navigation_section container">
+              <section class="logo">
+                <a href="../index.html">
+                  <img src="../src/assests/images/icons.png"
+                /></a>
+              </section>
+
+              <section class="navigation_menu"></section>
+
+              <section class="nav_links">
+                <nav>
+                  <ul>
+                    <a href="../index.html">Home</a>
+                    <a href="#our_programs">Our Program</a>
+                    <a href="#instructors">Instructor</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="./include/faq.html">Faqs</a>
+                    <a href="#contactUs">Contact Us</a>
+                  </ul>
+                </nav>
+              </section>
+            </section>
+          </header>
+        </section>
         <main>
           <section class="form_container">
             <section class="containers">
@@ -98,28 +126,12 @@
       </section>
     </section>
 
-    <!-- Header Import -->
-    <script>
-      // Function to fetch and insert header.html content
-      function includeHeader() {
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "header.html", true);
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState === 4 && xhr.status === 200) {
-            document.getElementById("header").innerHTML = xhr.responseText;
-          }
-        };
-        xhr.send();
-      }
-
-      // Call the function to include header.html content
-      includeHeader();
-    </script>
+   
 
     <!-- Footer Import -->
     <script>
       // Function to fetch and insert header.html content
-      function includeHeader() {
+      function includeFooter() {
         var xhr = new XMLHttpRequest();
         xhr.open("GET", "footer.html", true);
         xhr.onreadystatechange = function () {
@@ -131,7 +143,7 @@
       }
 
       // Call the function to include header.html content
-      includeHeader();
+      includeFooter();
     </script>
   </body>
 </html>
