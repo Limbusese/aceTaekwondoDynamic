@@ -12,15 +12,12 @@
   <link rel="stylesheet" href="./src/assests/css/index.css" />
   <linK rel="stylesheet" href="./src/assests/css/responsive.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
   
-<script src="./src/assests/javascript/index.js" defer></script>
-<script src="./src/assests/javascript/imageSlider.js" defer></script>
-
+  <script src="./src/assests/javascript/index.js" defer></script>
+  <script src="./src/assests/javascript/imageSlider.js" defer></script>
 </head>
 
 <body>
-  <!-- sese -->
   <section class="body_section"> 
     <section class="background_section">
       <section class="circle"></section>
@@ -55,7 +52,28 @@
       </section>
 
        <!-- Header Section Starts -->
-       <section id="header"></section>
+       <header>
+        <section class="navigation_section container">
+          <section class="logo">
+            <a href="#"> <img src="./src/assests/images/icons.png" /></a>
+          </section>
+    
+          <section class="navigation_menu"></section>
+    
+          <section class="nav_links">
+            <nav>
+              <ul>
+                <a href="./index.html">Home</a>
+                <a href="#our_programs">Our Program</a>
+                <a href="#instructors">Instructor</a>
+                <a href="#gallery">Gallery</a>
+                <a href="./include/faq.html">Faqs</a>
+                <a href="#contactUs">Contact Us</a>
+              </ul>
+            </nav>
+          </section>
+        </section>
+      </header>
       <!-- Header Sectiond Ends -->
 
 
@@ -398,7 +416,7 @@
     <!-- Footer Import -->
 <script>
   // Function to fetch and insert footer.html content
-  function includeHeader() {
+  function includeFooter() {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'include/footer.html', true);
     xhr.onreadystatechange = function () {
@@ -410,7 +428,7 @@
   }
 
   // Call the function to include footer.html content
-  includeHeader();
+  includeFooter();
 </script>
 
 
