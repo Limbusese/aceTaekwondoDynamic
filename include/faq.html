@@ -10,12 +10,38 @@
 
     <link rel="stylesheet" href="../src/assests/css/faq.css" />
     <link rel="stylesheet" href="../src/assests/css/index.css" />
+    <linK rel="stylesheet" href="../src/assests/css/responsive.css" />
+
+    <script src="../src/assests/javascript/index.js" defer></script>
 </head>
 
 <body>
     <section class="body_section">
         <section class="background_section">
-          <section id="header"></section>
+            <section id="header">
+                <header>
+                    <section class="navigation_section container">
+                        <section class="logo">
+                            <a href="../index.html"> <img src="../src/assests/images/icons.png" /></a>
+                        </section>
+
+                        <section class="navigation_menu"></section>
+
+                        <section class="nav_links">
+                            <nav>
+                                <ul>
+                                    <a href="../index.html">Home</a>
+                                    <a href="#our_programs">Our Program</a>
+                                    <a href="#instructors">Instructor</a>
+                                    <a href="#gallery">Gallery</a>
+                                    <a href="./include/faq.html">Faqs</a>
+                                    <a href="#contactUs">Contact Us</a>
+                                </ul>
+                            </nav>
+                        </section>
+                    </section>
+                </header>
+            </section>
             <main>
                 <section class="accordion">
                     <h1>Frequently Asked Questions</h1>
@@ -48,47 +74,47 @@
                         <label for="accordion5" class="accordion-item-title"><span class="icon"></span>What should I wear to class?</label>
                         <section class="accordion-item-desc">The timeline for seeing results from SEO can vary based on several factors, such as the competitiveness of keywords, the current state of the website, and the effectiveness of the SEO strategy. Generally, it may take several weeks to months before noticeable improvements occur. However, long-term commitment to SEO is essential for sustained success.</section>
                     </section>
-
+                </section>
             </main>
             <section id="footer"></section>
         </section>
     </section>
 
-      <!-- Header Import -->
-      <script>
+    <!-- Header Import -->
+    <!-- <script>
         // Function to fetch and insert header.html content
         function includeHeader() {
-          var xhr = new XMLHttpRequest();
-          xhr.open("GET", "header.html", true);
-          xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-              document.getElementById("header").innerHTML = xhr.responseText;
-            }
-          };
-          xhr.send();
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "header.html", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("header").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
         }
-  
+
         // Call the function to include header.html content
         includeHeader();
-      </script>
-  
-      <!-- Footer Import -->
-      <script>
+    </script> -->
+
+    <!-- Footer Import -->
+    <script>
         // Function to fetch and insert header.html content
-        function includeHeader() {
-          var xhr = new XMLHttpRequest();
-          xhr.open("GET", "footer.html", true);
-          xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-              document.getElementById("footer").innerHTML = xhr.responseText;
-            }
-          };
-          xhr.send();
+        function includeFooter() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "footer.html", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("footer").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
         }
-  
+
         // Call the function to include header.html content
-        includeHeader();
-      </script>
+        includeFooter();
+    </script>
 </body>
 
 </html>
