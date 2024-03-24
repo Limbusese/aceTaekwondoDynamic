@@ -66,12 +66,13 @@ header .nav_links nav ul a:nth-child(4) {
   position: relative;
   display: grid;
   place-items: center;
-  font-family: "Montserrat", sans-serif;
+   font-family: "Montserrat", sans-serif;s
 }
 .containers .title {
   font-size: 25px;
   font-weight: 500;
   position: relative;
+  margin-bottom: 6%;
 }
 
 .containers .title::before {
@@ -184,6 +185,7 @@ form .button input {
 form .button input:hover {
   transition: all 0.3s ease;
   background: linear-gradient(-135deg, var(--main-color), var(--main-grey));
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 584px) {

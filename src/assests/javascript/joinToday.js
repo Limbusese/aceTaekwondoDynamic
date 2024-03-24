@@ -35,43 +35,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         console.log(Object.keys(formData).length);
-        
+
         if (Object.keys(formData).length === 7) {
-            const xhr = new XMLHttpRequest();
-            xhr.open('POST', 'joinToday.php', true);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    console.log('Data sent successfully');
-                    // const successMessage = document.createElement('div');
-                    // successMessage.textContent = "Great! Your Information Is Submitted.";
-                    // successMessage.classList.add('success-message');
-
-                    // container.appendChild(successMessage);
-
-                    setTimeout(() => {
-                        swal({
-                            title: "Great!",
-                            text: "You information have been submitted!",
-                            icon: "success",
-                        });
-                        form.reset();
-                    }, 600);
-                } else {
-                    console.log('Error sending data');
-                
-                }
-            };
-
-            xhr.send(JSON.stringify(formData));
+            // SweetAlert message instead of xhr
+            setTimeout(() => {
+                swal({
+                    title: "Great!",
+                    text: "You information have been submitted!",
+                    icon: "success",
+                });
+                form.reset();
+            }, 600);
         } else {
-            // const errorMessage = document.createElement('div');
-            // errorMessage.textContent = "Error!! Please Fill All Form Fields.";
-            // errorMessage.classList.add('error-message'); 
-
-            // container.appendChild(errorMessage);
-
+            // SweetAlert message for error
             setTimeout(() => {
                 swal({
                     title: "Error!",
