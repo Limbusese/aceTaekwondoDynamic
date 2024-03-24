@@ -22,6 +22,12 @@ html {
   margin: 0 !important;
 }
 
+.body_section,
+.background_section {
+  margin: 0;
+  padding: 0;
+}
+
 body .body_section {
   height: 100%;
   font-family: "Montserrat", sans-serif;
@@ -135,6 +141,7 @@ header {
 }
 
 .hero_section_background {
+
   height: 100%;
   z-index: 9;
   background-image: linear-gradient(
@@ -473,7 +480,7 @@ header.active .navigation_section {
 
 .article {
   margin: 3rem 0rem;
-  text-align: left;
+  text-align: right;
   font-size: 1.7rem;
   font-weight: 500;
 }

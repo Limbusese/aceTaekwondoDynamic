@@ -32,35 +32,7 @@ window.addEventListener("scroll", function() {
 
   });
 
-// document.querySelectorAll('a[href^="../index.php"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
 
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
-
-
-// const backgroundSection = document.querySelector('.background_section');
-//   const bodySection = document.querySelector('.body_section');
-
-//   bodySection.addEventListener('scroll', function() {
-//     const scrollY = bodySection.scrollTop;
-//     const windowHeight = bodySection.clientHeight;
-//     const fullHeight = backgroundSection.scrollHeight;
-
-//     // Calculate the height of the visible area
-//     const visibleHeight = windowHeight + scrollY;
-
-//     // Check if the visible area exceeds the full height
-//     if (visibleHeight >= fullHeight) {
-//       backgroundSection.style.overflowY = 'hidden'; // Hide overflowing part
-//     } else {
-//       backgroundSection.style.overflowY = 'scroll'; // Allow scrolling
-//     }
-//   });
 
 
 

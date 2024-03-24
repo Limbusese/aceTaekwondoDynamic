@@ -56,6 +56,11 @@
       justify-content: center;
     }
   
+  /* Hero Section Information */
+  .hero_section_information {
+    top: 23dvw;
+  }
+
     /* Our Instructors Details */
     .our_instructors_images {
       gap: 8%;
@@ -92,17 +97,23 @@
     .header_section {
       height: 50vh;
     }
+
+    .navigation_section {
+     top: 6dvw;
+    }
   
+    /* Header Section Ends Here */
+
     /* Hero Section */
     .dividor_hero {
       margin-top: 5%;
       margin-bottom: 5%;
     }
+   
+    .header_section {
+      height: 70dvw;
+    }
   
-    .hero_section_information {
-      margin-top: 20vh;
-     
-  }
   
     /* Our Program Section */
     .our_programs_card_details {
@@ -173,6 +184,10 @@
       display: flex;
     }
   
+    .navigation_section {
+      top: 4dvw;
+     }
+
     .nav_links.active {
       background-color: none;
     }
@@ -217,7 +232,7 @@
     }
     
     .hero_section_information {
-      margin-top: 2vh;
+      top: 20dvw;
     }
 
     /* cicrle starts here */
@@ -380,13 +395,13 @@
   
     /* Hero Section */
     .header_section {
-      height: 85vh;
+      height: 82vh;
     }
-  
+    
     .hero_section_information {
-      margin-top: 15%;
+      top: 15dvw;
     }
-  
+
     /* Our Instructors Details */
     .our_instructors_images {
       gap: 3%;
@@ -425,10 +440,12 @@
       margin-bottom: 3%;
     }
   
-
-  
     .header_section {
-      height: 80vh;
+      height: 84vh;
+    }
+    
+    .hero_section_information {
+      top: 15dvw;
     }
 
     .accordion {
@@ -438,19 +455,19 @@
 
     body .body_section {
       height: 100%;
-      border: 3px solid;
       font-family: "Montserrat", sans-serif;
       background: linear-gradient(to right, #000 50%, #ff9924 50%);
       border-image-slice: 1;
       padding: 4rem;
       overflow: hidden;
+      position: relative;
     
     }
     
     .background_section {
       background-color: rgb(254, 231, 201);
       height: 100%;
-      z-index: 10;
+      z-index: 10000;
       box-shadow: 0rem 0.9rem 0.9rem 0.9rem rgba(1, 1, 1, 0.3);
       position: relative;
       
