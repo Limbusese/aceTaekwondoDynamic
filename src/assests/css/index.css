@@ -33,7 +33,7 @@ body .body_section {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(to right, #000 50%, #ff9924 50%);
   border-image-slice: 1;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
   overflow: hidden;
 
 }
@@ -82,12 +82,13 @@ body .body_section {
 
 
 .circle_bottom {
+  display: none;
   width: 33rem; 
   height: 33rem; 
   border-radius: 50%;
-  position: absolute;
+  position: relative;
   left: -14%;
-  bottom: -2%;
+  bottom: -3%;
   transform: rotate(15deg);
   z-index: 10;
  
@@ -362,13 +363,15 @@ header.active .navigation_section {
 
 .menu_sections .header article {
   background-color: rgb(255, 176, 86);
-  width: fit-content;
-  padding: 1rem 2rem 1rem 2rem;
+  width: 26rem;
+  height: 4rem;
   color: #ffff;
   font-weight: 600;
   font-size: 1.6rem;
   border-radius: 0.6rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 2rem;
+  display: grid;
+  place-content: center;
 }
 
 /* card Section */
@@ -423,7 +426,8 @@ header.active .navigation_section {
   cursor: pointer;
 }
 
-.our_instructors_image::after {
+.our_instructors_image::after,
+footer.footer_category_social_media::after {
   content: attr(title);
   position: absolute;
   bottom: 100%;
@@ -480,7 +484,7 @@ header.active .navigation_section {
 
 .article {
   margin: 3rem 0rem;
-  text-align: right;
+  text-align: center;
   font-size: 1.7rem;
   font-weight: 500;
 }
@@ -549,6 +553,11 @@ header.active .navigation_section {
 .hidden {
   display: none;
   transition: all 0.3s ease-in-out;
+}
+
+.gallery_section {
+  padding: 37% 6% 30% 6%;
+  
 }
 
 /* Competition Images to be slider */
@@ -800,3 +809,16 @@ footer .footer_two {
   line-height: 2.5rem;
 }
 
+footer .footer_category_social_medias {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  width: fit-content;
+  margin-top: 4%;
+}
+
+footer .footer_category_social_medias .fa-brands {
+  font-weight: 600;
+  color: azure;
+  font-size: 1.8rem;
+}

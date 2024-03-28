@@ -61,7 +61,7 @@ leftArrow.addEventListener('click', () => {
     showImage(index);
 });
 
-// Event listener for clicking on right arrow
+
 // Event listener for clicking on right arrow
 rightArrow.addEventListener('click', () => {
     // Calculate next index

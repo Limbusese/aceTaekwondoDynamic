@@ -163,6 +163,7 @@
   
     html {
       font-size: 68.9%;
+      scroll-padding: 12vmax;
     }
   
     .dividor_hero {
@@ -171,8 +172,22 @@
     }
   
     .dividor {
-      margin: 9vh 0vh 5vh 0vh
+      margin: 11dvh 0vh 5vh 0vh
     }
+
+    /* Height view for all menus */
+       .our_instructors_sections,
+       .competition_achievement_section
+       
+        {
+        height: 90dvh;
+        box-sizing: border-box;
+       }
+
+       .choose_us {
+        margin-top: 18%;
+       }
+    /* Height view for al menus end here */
   
     /* header */
     .navigation_menu,
@@ -228,11 +243,16 @@
     }
   
     .header_section {
-      height: 80vh;
+      height: 100vh;
     }
     
     .hero_section_information {
       top: 20dvw;
+    }
+
+    .head_content p {
+      font-weight: 700;
+      font-size: 3rem;
     }
 
     /* cicrle starts here */
@@ -313,13 +333,23 @@
       right: 1%;
       width: 16dvw;
     }
+
+    .article {
+      text-align: right;
+    }
   
     /* Our Community */
     .our_community_information {
       display: grid;
-      grid-template-columns: 50%;
-      text-align: left;
+      grid-template-columns: 94%;
+      text-align: center;
+      place-content: center;
     }
+
+    #our_communities {
+      height: 90dvh;
+    }
+    /* Our community ends here */
   
     /* Competition and achievement */
     .competition_achievement_images .competition_achievement_images_slider {
@@ -333,6 +363,10 @@
     .competition_achievement_information article {
       padding: 0 12rem;
     }
+
+    .gallery_section {
+      padding: 9%;
+  }
   
     /* Why Us */
   
@@ -454,23 +488,8 @@
     }
 
     body .body_section {
-      height: 100%;
-      font-family: "Montserrat", sans-serif;
-      background: linear-gradient(to right, #000 50%, #ff9924 50%);
-      border-image-slice: 1;
-      padding: 4rem;
-      overflow: hidden;
-      position: relative;
+     padding: 4rem;
     
-    }
-    
-    .background_section {
-      background-color: rgb(254, 231, 201);
-      height: 100%;
-      z-index: 10000;
-      box-shadow: 0rem 0.9rem 0.9rem 0.9rem rgba(1, 1, 1, 0.3);
-      position: relative;
-      
     }
     
     /* circle css starts here */
