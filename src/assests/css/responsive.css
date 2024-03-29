@@ -172,21 +172,22 @@
     }
   
     .dividor {
-      margin: 11dvh 0vh 5vh 0vh
+      margin: 11dvh 0vh 5vh 0vh;
     }
 
+    .competition_achievement_section {
+      height: 100%;
+    }
+
+  
     /* Height view for all menus */
        .our_instructors_sections,
-       .competition_achievement_section
-       
+       .our_community_section
         {
         height: 90dvh;
         box-sizing: border-box;
        }
 
-       .choose_us {
-        margin-top: 18%;
-       }
     /* Height view for al menus end here */
   
     /* header */
@@ -335,15 +336,16 @@
     }
 
     .article {
-      text-align: right;
+      text-align: center;
     }
   
     /* Our Community */
     .our_community_information {
       display: grid;
-      grid-template-columns: 94%;
+      grid-template-columns: 79%;
       text-align: center;
       place-content: center;
+      height: 60dvh;
     }
 
     #our_communities {
@@ -366,6 +368,10 @@
 
     .gallery_section {
       padding: 9%;
+  }
+
+  #gallery {
+    height: 100%;
   }
   
     /* Why Us */
@@ -610,4 +616,4 @@
     right: 1%;
     width: 21vh;
   }
-  }
+  
