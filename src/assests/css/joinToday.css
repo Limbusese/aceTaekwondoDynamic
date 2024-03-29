@@ -21,7 +21,14 @@ html {
 }
 
 header {
-  background-color: rgb(185,113,24);
+  background-color: rgb(254, 231, 201);
+  padding: none;
+  margin: none;
+}
+
+header .navigation_section {
+  top: 0;
+  padding: 0 7% !important;
 }
 
 main {
