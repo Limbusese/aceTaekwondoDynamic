@@ -159,7 +159,7 @@
   
     /* Our Community */
      .our_community_section {
-      height: 40dvh;
+      height: 40vh;
 
      }
     /* Competition And Achievement Section */
@@ -187,7 +187,7 @@
     }
   
     .dividor {
-      margin: 11dvh 0vh 5vh 0vh;
+      margin: 11vh 0vh 5vh 0vh;
     }
 
     .competition_achievement_section {
@@ -199,7 +199,7 @@
        .our_instructors_sections,
        .our_community_section
         {
-        height: 90dvh;
+        height: 90vh;
         box-sizing: border-box;
        }
 
@@ -365,11 +365,11 @@
       grid-template-columns: 79%;
       text-align: center;
       place-content: center;
-      height: 60dvh;
+      height: 60vh;
     }
 
     #our_communities {
-      height: 90dvh;
+      height: 90vh;
     }
     /* Our community ends here */
   
