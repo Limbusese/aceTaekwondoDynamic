@@ -339,7 +339,7 @@ header .navigation_section {
 
 .hero_section_information {
   position: absolute;
-  top: 20dvh;
+  top: 20vh;
   z-index: 8;
 }
 
@@ -453,7 +453,7 @@ footer.footer_category_social_media::after {
 }
 
 .our_instructors_details {
-  padding-top: 12dvh;
+  padding-top: 12vh;
 }
 
 .our_instructors_images {
