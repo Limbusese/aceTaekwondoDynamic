@@ -9,17 +9,17 @@ html {
     font-size: 62.9%;
 }
 
+
 header {
-    background-color: rgb(254, 231, 201);
+    background-color:rgb(254,152,32);
     padding: none;
     margin: none;
 }
 
 header .navigation_section {
-    top: 0;
+    top: 0dvw;
     padding: 0 7% !important;
   }
-
 
 header .nav_links nav ul a:nth-child(2),
 header .nav_links nav ul a:nth-child(3),

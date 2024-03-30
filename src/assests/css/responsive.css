@@ -33,6 +33,12 @@
     .header_section {
       height: 65vh;
     }
+
+    /* Footer Section */
+    footer .footer_one_categories {
+      display: grid;
+      place-items: center;
+    }
   
     
   
@@ -94,18 +100,24 @@
     }
   
     /* Header Section */
+    header {
+      width: 90%;
+      left: 5%;
+    }
+
     .header_section {
       height: 50vh;
     }
 
-    .navigation_section {
-     top: 6dvw;
-    }
+
+    header .navigation_section {
+      padding: 0 7% !important;
+  }
   
     /* Header Section Ends Here */
 
     /* Hero Section */
-    .dividor_hero {
+    .dividor {
       margin-top: 5%;
       margin-bottom: 5%;
     }
@@ -146,7 +158,10 @@
     }
   
     /* Our Community */
-  
+     .our_community_section {
+      height: 40dvh;
+
+     }
     /* Competition And Achievement Section */
   
     /* Why Us Section */
@@ -254,6 +269,11 @@
     .head_content p {
       font-weight: 700;
       font-size: 3rem;
+    }
+
+    header {
+      width: 94%;
+      left: 2.9%;
     }
 
     /* cicrle starts here */
@@ -422,7 +442,19 @@
       justify-content: space-between;
       text-align: left;
     }
+    
+    footer .footer_category_social_medias, footer .footer_category_content {
+      width: 100%;
+    }
+/* 
+    footer .footer_one #contactUs {
+      display: grid;
+      
+    } */
+    
   }
+
+  /* Footer Section  Ends Here */
   
   @media only screen and (min-width: 1280px) {
     .container {

@@ -7,54 +7,68 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const formData = {};
 
-        const firstNameInput = form.querySelector('input[type="text"][placeholder="E.g: John"]');
-        const lastNameInput = form.querySelector('input[type="text"][placeholder="E.g: Smith"]');
-        const ageInput = form.querySelector('input[type="number"][placeholder="E.g: 12"]');
-        const emailInput = form.querySelector('input[type="email"][placeholder="E.g: johnsmith@gmail.com"]');
-        const addressInput = form.querySelector('input[type="text"][placeholder="E.g: 123 Main Street, Sydney, NSW 2000"]');
-        const phoneInput = form.querySelector('input[type="tel"][placeholder="E.g: (02) 1234 5678"]');
+        const firstNameInput = form.querySelector('input[type="text"][placeholder=" John"]');
+        const lastNameInput = form.querySelector('input[type="text"][placeholder=" Smith"]');
+        const ageInput = form.querySelector('input[type="number"][placeholder=" 12"]');
+        const emailInput = form.querySelector('input[type="email"][placeholder=" johnsmith@gmail.com"]');
+        const addressInput = form.querySelector('input[type="text"][placeholder="123 Main Street, Sydney, NSW 2000"]');
+        const phoneInput = form.querySelector('input[type="tel"][placeholder=" +(02) 1234 5678"]');
         const genderInput = form.querySelector('input[name="gender"]:checked');
 
-        console.log(firstNameInput.value);
-        console.log(lastNameInput.value);
-        console.log(ageInput.value);
-        console.log(emailInput.value);
-        console.log(addressInput.value);
-        console.log(phoneInput.value);
-        console.log(genderInput ? genderInput.value : null);
+        // Validation
+        const errors = [];
 
-        if (firstNameInput) formData.firstName = firstNameInput.value;
-        if (lastNameInput) formData.lastName = lastNameInput.value;
-        if (ageInput) formData.age = ageInput.value;
-        if (emailInput) formData.email = emailInput.value;
-        if (addressInput) formData.address = addressInput.value;
-        if (phoneInput) formData.phone = phoneInput.value;
-        if (genderInput) {
-            const genderLabel = document.querySelector(`label[for="${genderInput.id}"]`);
-            formData.gender = genderLabel.textContent.trim();
+        if (!firstNameInput.value.trim()) {
+            errors.push("First name is required");
+        }
+        if (!lastNameInput.value.trim()) {
+            errors.push("Last name is required");
+        }
+        if (!ageInput.value.trim()) {
+            errors.push("Age is required");
+        } else if (isNaN(ageInput.value) || parseInt(ageInput.value) < 1) {
+            errors.push("Age must be a positive number");
+        }
+        if (!emailInput.value.trim()) {
+            errors.push("Email is required");
+        } else if (!isValidEmail(emailInput.value)) {
+            errors.push("Invalid email address");
+        }
+        if (!phoneInput.value.trim()) {
+            errors.push("Phone number is required");
+        } else if (!isValidPhoneNumber(phoneInput.value)) {
+            errors.push("Invalid phone number format. Please enter a valid Australian phone number.");
         }
 
-        console.log(Object.keys(formData).length);
-
-        if (Object.keys(formData).length === 7) {
-            // SweetAlert message instead of xhr
-            setTimeout(() => {
-                swal({
-                    title: "Great!",
-                    text: "You information have been submitted!",
-                    icon: "success",
-                });
-                form.reset();
-            }, 600);
-        } else {
-            // SweetAlert message for error
-            setTimeout(() => {
-                swal({
-                    title: "Error!",
-                    text: "Please fill all form fields!",
-                    icon: "warning",
-                });
-            }, 400);
+        if (errors.length > 0) {
+            // Display error messages
+            swal({
+                title: "Error!",
+                text: errors.join("\n"),
+                icon: "warning",
+            });
+            return; // Prevent form submission if there are errors
         }
+
+        // SweetAlert message for success
+        swal({
+            title: "Great!",
+            text: "Your information has been submitted!",
+            icon: "success",
+        });
+        form.reset();
     });
 });
+
+// Function to validate email address
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+// Function to validate Australian phone number
+function isValidPhoneNumber(phoneNumber) {
+    // Australian phone number regex (matches formats: (02) 1234 5678, 02 1234 5678, +61 2 1234 5678)
+    const phoneRegex = /^(\(0[1-9]\)|0[1-9])\s?\d{4}\s?\d{4}$/;
+    return phoneRegex.test(phoneNumber);
+}
